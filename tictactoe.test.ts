@@ -26,3 +26,9 @@ test('X should appear on center grid', async () => {
     await centerClick.click();
 
 });
+test('X should appear on top center grid', async () => {
+    const centerClick = await (await driver).findElement(By.id("cell-2"));
+    console.log(centerClick)
+    await centerClick.click();
+
+});
