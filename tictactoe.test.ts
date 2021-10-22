@@ -22,21 +22,19 @@ test('I can start a game', async () => {
 
 test('X should appear on center grid', async () => {
     const centerClick = await (await driver).findElement(By.id("cell-4"));
-    console.log(centerClick)
     await centerClick.click();
-
+    await driver.sleep(4000)
 });
 
 test('X should appear on top center grid', async () => {
     const topCenterClick = await (await driver).findElement(By.id("cell-1"));
-    console.log(topCenterClick)
     await topCenterClick.click();
-
+    await driver.sleep(4000)
 });
 
 test('X should appear on bottom center grid', async () => {
     const bottomCenterClick = await (await driver).findElement(By.id("cell-7"));
-    console.log(bottomCenterClick)
     await bottomCenterClick.click();
+    await driver.sleep(4000)
 
 });
